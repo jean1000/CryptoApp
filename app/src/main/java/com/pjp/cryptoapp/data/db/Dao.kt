@@ -1,11 +1,11 @@
 package com.pjp.cryptoapp.data.db
 
 import androidx.lifecycle.LiveData
+import androidx.room.*
 import androidx.room.Dao
-import androidx.room.Query
-import androidx.room.Transaction
 
 @Dao
+@TypeConverters
 interface Dao {
     @Transaction
     @Query("select * from crypto_table")

@@ -14,6 +14,9 @@ data class Crypto(
     val dailyChange: Double,
     val dailyChangePercentage: Double,
     val high: Double,
+    val low:Double,
+    val volume:Double,
+    val marketCap:Long,
     val supply: Double?,
     val chartData: List<Float>
 ):Serializable{

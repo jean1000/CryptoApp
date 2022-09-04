@@ -79,4 +79,7 @@ dependencies {
     //paging
     implementation 'androidx.paging:paging-compose:1.0.0-alpha15'
 
+    //livedata
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+
 }

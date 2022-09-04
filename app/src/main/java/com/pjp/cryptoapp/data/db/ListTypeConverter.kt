@@ -22,5 +22,19 @@ class ListTypeConverter {
             }
             return list
         }
+
+        @TypeConverter
+        @JvmStatic
+        fun writingStringFromFloatList(list: List<Float>?):String?{
+            var ids=""
+            if (ids.isEmpty()){
+                return null
+            }else{
+                for (i in list!!){
+                    ids +="$i"
+                }
+            }
+            return ids
+        }
     }
 }

@@ -64,4 +64,19 @@ dependencies {
     //Room libraries
     implementation "androidx.room:room-runtime:2.4.3"
     kapt "androidx.room:room-compiler:2.4.3"
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.3"))
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+
+    //okhttp
+    implementation "com.squareup.okhttp3:okhttp"
+    implementation "com.squareup.okhttp3:loggin-interceptor:4.9.1"
+
+    //viewmodel
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1'
+
+    //paging
+    implementation 'androidx.paging:paging-compose:1.0.0-alpha15'
+
 }
